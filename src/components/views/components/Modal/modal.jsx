@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { useEffect } from 'react'
 import './modal.scss'
-import { musicState  } from '../../../../store/store';
+import { musicState  } from '../../../../store/store.jsx';
 import { useRecoilState } from 'recoil';
-import { getYoutube } from '../../../../utils/apis/apis';
+import { getYoutube } from '../../../../utils/apis/apis.jsx';
 
 function ModalOpen () {
 
@@ -54,8 +54,8 @@ function ModalOpen () {
 
   return(
     <div className="ModalContainer">
-      {music && music.map((obj) => (
-        <div className='music_box'>
+      {music && music.map((obj, index) => (
+        <div className='music_box' key={index}>
           <img src={obj.snippet.thumbnails.maxres.url} 
           onClick={() => musicEvent(obj.snippet.resourceId.videoId, obj.snippet.thumbnails.maxres.url)}/>        
         </div>
