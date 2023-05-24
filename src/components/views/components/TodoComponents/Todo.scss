@@ -1,0 +1,145 @@
+@font-face {
+  font-family: 'Dovemayo_gothic';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.1/Dovemayo_gothic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.TodoResultContainer {
+  width:550px;
+  height: 574px;
+  position: relative;
+  border-radius: 20px;
+  top: 150px;
+  left: 100px;
+  border: solid 3px #fff;
+  box-shadow: 10px 10px 26px #868686, -12px -12px 36px #fff;
+
+  .ListContainer {
+    width: 470px;
+    height: 495px;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    max-height: 495px; /* 스크롤 영역의 최대 높이 설정 */
+    overflow-y: auto; /* 세로 스크롤 생성 */  
+  }
+
+  .ListContainer::-webkit-scrollbar {
+    width: 6px;  /* 스크롤바의 너비 */
+  }
+
+  .ListContainer::-webkit-scrollbar-track {
+    background: rgba(240, 241, 241, 0);  /*스크롤바 뒷 배경 색상*/
+  }
+
+  .todoList {
+    text-decoration: none;
+    list-style:none;
+    width: 450px;
+    margin: 0 auto;
+    height: 55px;
+    //background-color: rgb(15, 118, 209);
+    position: relative;
+
+    .todolist-item{
+      height: 50px;
+      text-decoration: none;
+      display: flex;
+      border-bottom-style: solid;
+      border-bottom-color: #003164;
+      
+    
+      .todolist-item__content{
+        width: 35px;
+        height: 25px;
+        margin-top: 10px;
+        //background-color: #e7ac15;
+        display: flex;
+        align-items: center;
+      }
+
+      .todolist-item__contentText{
+        width: 270px;
+        height: 32px;
+        margin-top: 8px;
+        font-size: 23px;
+        overflow: hidden;
+        margin-left: 40px;
+        font-family: 'Dovemayo_gothic';
+
+        input {
+          width: inherit;
+          height: inherit;
+          font-family: inherit;
+          font-size:inherit;
+          position: absolute;
+          outline: none;
+          border: none;
+          background-color: #ffffff16;
+        }
+      }
+
+      button {
+        position: relative;
+        margin-left: 75px;
+        margin-right: -5px;
+      }
+
+      .checked {
+        text-decoration: line-through;
+      }
+    }
+
+   
+
+  }
+
+  .Button-box{
+    width: 60px;
+    height: 30px;
+    margin-top: 2px;
+    //position: relative;
+    //background-color: aqua;
+    margin-left: 10px;
+    display: flex;
+  }
+
+
+
+  .fa-clock {
+    &:hover {
+      ~ .hovertext {
+        display: flex;
+        background-color: #FFCAC8;
+        position: absolute;
+        z-index: 100;
+        border-radius: 10px;
+      }
+    }
+  }
+
+  .hovertext {
+    width: 300px;
+    display: none; // 기본적으로 숨김 처리
+    position: absolute;
+    top: 0;
+    right: 110px; // 아이콘 오른쪽에 표시되도록 설정
+    background-color: #000;
+    color: black;
+    white-space: nowrap;
+    background-color: #da5e5e;
+
+    span{
+      width: 250px;
+      //background-color: rgb(227, 157, 7);
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+      font-family: 'Dovemayo_gothic';
+    }
+  }
+}

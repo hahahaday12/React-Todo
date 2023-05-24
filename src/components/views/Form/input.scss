@@ -1,0 +1,26 @@
+.InputContainer{
+    width: 450px;
+    height: 60px;
+    top: 60px;
+    left: 150px;
+    position: absolute;
+    border-radius: 30px;
+    background-color:#ffff;
+    box-shadow: 12px 12px 36px #999, -12px -12px 36px #fff;
+
+    .input_title{
+      width: 350px;
+      margin-top: 10px;
+      height: 40px;
+      margin-left: 50px;
+      outline: none;
+      border: 0;
+      font-family: 'Dovemayo_gothic';
+    }
+
+    ::placeholder{
+      font-weight: bold;
+      color: #EB5353;
+      font-size: 20px;
+    } 
+}

@@ -1,0 +1,48 @@
+@keyframes modalFadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+
+.ModalContainer{
+    width: 280px;
+    height: 800px;
+    border-radius: 10px;
+    position: absolute;
+    right: 10px;
+    background-color: white;
+    animation: modalFadeIn 0.2s ease-in-out;
+
+    .music_box{
+        width: 200px;
+        height: 180px;
+        position: relative;
+        margin: 0 auto;
+        left: 0;
+        margin-left: 40px;
+        top:10px;
+        margin-bottom: 20px;
+       
+
+        img {
+            width: inherit;
+            height: inherit;
+            transition: transform 0.3s ease-in-out;
+            border-radius: 10px;
+        }
+
+        &:hover img {
+            transform: scale(1.1);
+          }
+
+    }
+
+    
+
+}

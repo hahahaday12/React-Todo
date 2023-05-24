@@ -1,0 +1,22 @@
+.TimeNow{
+    width: 300px;
+    height: 80px;
+    position: absolute;
+    top: 90px;
+    left: 100px;
+    right: 0;
+    //background-color: orange;
+
+    span {
+        width: 268px;
+        //background-color: #999;
+        position: absolute;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        font-family: 'Dovemayo_gothic';
+        font-size: 80px;
+        color: #fff;
+        text-shadow:3px 3px 3px #FF7D7D;
+    }   
+  } 
