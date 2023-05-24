@@ -1,8 +1,4 @@
 {
-    "routes": [
-      { "src": "/(.*)\\.js(x)?", "dest": "/$1.js" }
-    ],
-
     "headers": [
         {
             "source":"/*.jsx",
