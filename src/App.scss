@@ -1,0 +1,39 @@
+#root {
+ 
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200');
+
+body {
+  background-image: url('../imge/background.jpg');
+  background-repeat : no-repeat;
+  background-size : cover;
+  -webkit-animation: slidein 15s;
+  animation: slidein 15s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;              
+}
+
+@-webkit-keyframes slidein {
+  from {background-position: top; background-size:3000px;}
+  to {background-position: -200px 0px; background-size:2750px;}
+}
+
+@keyframes slidein {
+  from {background-position: top; background-size:3000px;}
+  to {background-position: -200px 0px; background-size:2750px;}
+}
+
+a {
+  text-decoration: none;
+}
