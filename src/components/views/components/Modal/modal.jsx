@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { useEffect } from 'react'
 import './modal.scss'
-import { musicState  } from '../../../../store/store.jsx';
+import { musicState  } from '../../../../store/store.js';
 import { useRecoilState } from 'recoil';
-import { getYoutube } from '../../../../utils/apis/apis.jsx';
+import { getYoutube } from '../../../../utils/apis/apis.js';
 
 function ModalOpen () {
 

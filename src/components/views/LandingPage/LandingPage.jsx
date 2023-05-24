@@ -1,15 +1,15 @@
 import './Landing.scss';
 import { useState } from "react"
-import InputForm from '../Form/input.jsx';
-import ModalOpen from '../components/Modal/modal.jsx';
-import TodoResult from '../components/TodoComponents/TodoResult.jsx';
+import InputForm from '../Form/input.js';
+import ModalOpen from '../components/Modal/modal.js';
+import TodoResult from '../components/TodoComponents/TodoResult.js';
 import { faMusic, faPlay, faPause } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useRecoilState } from 'recoil';
-import { musicState } from '../../../store/store.jsx';
-import Digitalclock from '../components/clock/digitalclock.jsx';
+import { musicState } from '../../../store/store.js';
+import Digitalclock from '../components/clock/digitalclock.js';
 import YouTube from 'react-player';
-import CurrentLocation from '../components/weather/weatherbox.jsx';
+import CurrentLocation from '../components/weather/weatherbox.js';
 
 function LandingPage () {
 

@@ -2,7 +2,7 @@ import './App.scss'
 import {
   RecoilRoot,
 } from 'recoil'; 
-import LandingPage from './components/views/LandingPage/LandingPage.jsx'
+import LandingPage from './components/views/LandingPage/LandingPage.js'
 
 function App() {
 

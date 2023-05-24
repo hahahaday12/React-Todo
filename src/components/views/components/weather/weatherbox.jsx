@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getWeather } from "../../../../utils/apis/apis.jsx";
+import { getWeather } from "../../../../utils/apis/apis.js";
 import './weather.scss'
 
 function CurrentLocation() {

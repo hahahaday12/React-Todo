@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { getTodo, deletTodo, changeTodo} from '../../../../utils/apis/apis.jsx';
+import { getTodo, deletTodo, changeTodo} from '../../../../utils/apis/apis.js';
 import { faXmark, faPenToSquare, faCheck } from "@fortawesome/free-solid-svg-icons";
 import { faClock } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
