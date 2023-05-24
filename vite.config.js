@@ -7,7 +7,10 @@ export default () => ({
   plugins: [react(), sassDts()],
   resolve: {
     
-    alias: [{ find: '~', replacement: `${__dirname}/src` }]
+    alias: [{ find: '~', 
+            replacement: `${__dirname}/src`, 
+            '@': path.resolve(__dirname, 'src/main.jsx')
+          }]
   },
   
 })

@@ -2,7 +2,7 @@ import './input.scss'
 import { useState } from 'react';
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { todoPost } from '../../../utils/apis/apis.js';
+import { todoPost } from '../../../utils/apis/apis.jsx';
 
 function InputForm(props) {
   
