@@ -5,12 +5,11 @@ const __dirname = path.resolve();
 
 export default {
   plugins: [react(), sassDts()],
+  esbuild : {
+    loader: 'jsx',
+  },
   resolve: {
-    alias: {
-      '~': `${__dirname}/src`,
-      '@': path.resolve(__dirname, 'src/main.jsx')
-    }
-  }
-  ,appType: 'spa'
-
+    alias: [{ find: '@', replacement: `${__dirname}/src` }],
+  },
+  appType: 'spa'
 };
