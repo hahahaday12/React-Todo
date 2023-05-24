@@ -3,14 +3,12 @@ import sassDts from 'vite-plugin-sass-dts'
 import path from 'path';
 const __dirname = path.resolve();
 
-export default () => ({
+export default {
   plugins: [react(), sassDts()],
   resolve: {
-    
-    alias: [{ find: '~', 
-            replacement: `${__dirname}/src`, 
-            '@': path.resolve(__dirname, 'src/main.jsx')
-          }]
-  },
-  
-})
+    alias: {
+      '~': `${__dirname}/src`,
+      '@': path.resolve(__dirname, 'src/main.jsx')
+    }
+  }
+};
