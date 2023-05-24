@@ -11,4 +11,6 @@ export default {
       '@': path.resolve(__dirname, 'src/main.jsx')
     }
   }
+  ,appType: 'spa'
+
 };
